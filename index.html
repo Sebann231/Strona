@@ -11,72 +11,124 @@
   
   </head>
 <body>
-  <div class="card" style="width: 18rem;">
-    <img src="..\img\obraz2.jpg" class="card-img-top" alt="fura">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  <div class="card" aria-hidden="true">
-    <img src="..\img\obraz3.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title placeholder-glow">
-        <span class="placeholder col-6"></span>
-      </h5>
-      <p class="card-text placeholder-glow">
-        <span class="placeholder col-7"></span>
-        <span class="placeholder col-4"></span>
-        <span class="placeholder col-4"></span>
-        <span class="placeholder col-6"></span>
-        <span class="placeholder col-8"></span>
-      </p>
-      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
-    <p>
-      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Link with href
-      </a>
-      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Button with data-bs-target
-      </button>
-    </p>
-    <div class="collapse" id="collapseExample">
-      <div class="card card-body">
-        <a href="https://www.volkswagen.pl/pl.html">Więcej informacji...</a>
+  <div class="container">
+    <div class="row row-cols-xs-4 row-cols-sm-2 row-cols-md-4">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+        <img src="..\img\obraz4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mercedes-Benz</h5>
+          <p class="card-text"></p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+            Więcej informacji...
+          </button>
+        </div>
+      </div></div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="..\img\obraz1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BMW</h5>
+            <p class="card-text"><p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+             Więcej informacji...
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="..\img\obraz2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AUDI</h5>
+            <p class="card-text"></p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+              Więcej informacji...
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="..\img\obraz3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Volkswagen</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+              Więcej informacji...
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading1">First</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2">Second</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-            <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h4 id="scrollspyHeading1">First heading</h4>
-      <p>...</p>
-      <h4 id="scrollspyHeading2">Second heading</h4>
-      <p>...</p>
-      <h4 id="scrollspyHeading3">Third heading</h4>
-      <p>...</p>
-      <h4 id="scrollspyHeading4">Fourth heading</h4>
-      <p>...</p>
-      <h4 id="scrollspyHeading5">Fifth heading</h4>
-      <p>...</p>
+  </div>
+ <!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      </div>
+      <div class="modal-body">
+        <a href="https://www.mercedes-benz.pl/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE">Więcej informacji...</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
+  </div>
+</div>
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      </div>
+      <div class="modal-body">
+        <a href="https://www.bmw.pl/pl/index.html">Więcej informacji...</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamnkij</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      </div>
+      <div class="modal-body">
+        <a href="https://www.audi.pl/pl/web/pl.html">Więcej informacji...</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      </div>
+      <div class="modal-body">
+        <a href="https://www.volkswagen.pl/pl.html">Więcej informacji...</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
