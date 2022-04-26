@@ -5,28 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\stronacss.css">
-    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="../css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
   </head>
-<body>
-    <div class="row header">
-      <div class="col-xs-12">
-        <h1>Bootstrap 4 12-Column Layout </h1>
-      </div>
+  <body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="..\img\logo.png"
+          height="45"
+          alt="Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" target="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="page" href="link1.html">link1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">link2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">link3</a>
+        </li>  
+      </ul>
+      <!-- Left links -->
     </div>
-  
-    <div class="row">
-      <div class="col-sm-12 col-lg-3 first-column">
-        <img class="image" src="..\img\obraz2.jpg" alt="">
-      </div>
-      <div class="col-sm-12 col-lg-6 second-column">
-        <img class="image" src="..\img\obraz3.jpg" alt="">
-      </div>
-      <div class="col-sm-12 col-lg-3 first-column">
-        <img class="image" src="..\img\obraz4.jpg" alt="">
-      </div>
-    </div>   
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar --> 
+<iframe name="page" style="width: 100% ; height: 880px;" src="home.html" frameborder="0"></iframe>
 </body>
 </html>
