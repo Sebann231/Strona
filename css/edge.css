@@ -3,3 +3,13 @@
     height: 10%;
     width: 100%;
 }
+.whiteButton {
+    background-color: #FFFFFF;
+    width: 40px;
+  }
+  .imageSize {
+    width: 25px;
+  }
+  .buttonFull {
+    color:white ;
+  }

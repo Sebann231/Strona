@@ -26,8 +26,12 @@
     <script type="text/javascript" src="js/popper.min.js"></script> 
     <!-- Bootstrap core JavaScript --> 
     <script type="text/javascript" src="js/bootstrap.min.js"></script> 
-    <!-- MDB core JavaScript --> 
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <link rel="stylesheet" href="../css/edge.css">
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <style>
   .hide {
       display: none ; 
@@ -39,6 +43,9 @@
   .hide 
   { display: block ;}   
      }
+  .invisible {
+    background-color: none;
+  }
 
 
      
@@ -48,7 +55,7 @@
 <body style="text-align: center;">
   <!-- MDB -->
   <!-- Custom scripts -->
-    <div style="background-image: url('../img/trawa.jpg');">
+    <div style="background-image: url('../img/tlo.jpg');">
       <div class="row">
         <div class="show col-12 col-lg-3">
           <div class="p-3 dropdown">
@@ -100,35 +107,106 @@
         </div>
         <div class="col-6" style="text-align:right">
           
-          <a
-          class="nav-link dropdown-toggle hidden-arrow"
-          href="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-mdb-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="fas fa-bell fa-lg"></i>
-          <span class="badge rounded-pill badge-notification bg-danger">12</span>
-        </a>
-        <ul
-          class="dropdown-menu dropdown-menu-end"
-          aria-labelledby="navbarDropdownMenuLink"
-        >
-          <li>
-            <a class="dropdown-item" href="#">Some news</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">Another news</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </li>
-        </ul>
+          
+      
 
         </div>
         </div>
         </div>
+        <div class="col-3"></div>
+        <div class="p-3 col-6">
+          <!-- Buttons trigger collapse -->
+<button
+class="btn btn-primary dropdown-toggle"
+type="button"
+data-mdb-toggle="collapse"
+data-mdb-target="#collapseExample"
+aria-expanded="false"
+aria-controls="collapseExample"
+>
+Szybkie linki
+        </button>
+<!-- Collapsed content -->
+<div class="collapse p-3 mt-3" id="collapseExample">
+  <div class="col-12 order-4 d-flex justify-content-center">
+    <div class="buttonFull m-3">
+    <div class="d-flex justify-content-center">
+  <div class="d-flex  whiteButton p-2 rounded-2">
+    <img class="imageSize" src="img/fb.png" />
+  </div>
+  </div>
+  <div class="text-center">Facebook</div>
+  </div>
+  <div class="buttonFull m-3">
+    <div class="d-flex justify-content-center">
+  <div class="d-flex  whiteButton p-2 rounded-2 ">
+    <img class="imageSize" src="img/tw.png" />
+  </div>
+  </div>
+  <div class="text-center">Twitter</div>
+  </div>
+  <div class="buttonFull m-3">
+    <div class="d-flex justify-content-center">
+  <div class="d-flex  whiteButton p-2 rounded-2 ">
+    <img class="imageSize" src="img/yt.png" />
+  </div>
+  </div>
+  <div class="text-center">YouTube</div>
+  </div>
+  <div class="buttonFull m-3">
+    <div class="d-flex justify-content-center">
+  <div class="d-flex  whiteButton p-2 rounded-2 ">
+    <img class="imageSize" src="img/rd.png" />
+  </div>
+  </div>
+  <div class="text-center">Reddit</div>
+  </div>
+  <div class="buttonFull m-3">
+    <div class="d-flex justify-content-center">
+  <div class="d-flex  whiteButton p-2 rounded-2 ">
+    <img class="imageSize" src="img/ig.png" />
+  </div>
+  </div>
+  <div class="text-center">Instagram</div>
+  </div>
+  <div class="buttonFull m-3">
+    <div class="d-flex justify-content-center">
+  <div class="d-flex  whiteButton p-2 rounded-2 ">
+    <img class="imageSize" src="img/pt.png" />
+  </div>
+  </div>
+  <div class="text-center">Pinterest</div>
+  </div>
+  <div class="buttonFull m-3">
+    <div class="d-flex justify-content-center">
+  <div class="d-flex  whiteButton p-2 rounded-2 ">
+    <img class="imageSize" src="img/git.png" />
+  </div>
+  </div>
+  <div class="text-center">GitHub</div>
+  </div>
+  <div class="buttonFull m-3">
+    <div class="d-flex justify-content-center">
+  <div class="d-flex  whiteButton p-2 rounded-2 ">
+    <img class="imageSize" src="img/wa.png" />
+  </div>
+  </div>
+  <div class="text-center">WhatsApp</div>
+  </div>
+  <div class="buttonFull m-3">
+    <div class="d-flex justify-content-center">
+  <div class="d-flex  whiteButton p-2 rounded-2 ">
+    <img class="imageSize" src="img/google.png" />
+  </div>
+  </div>
+  <div class="text-center">Google</div>
+  </div>
+  </div>
+  
+
+</div>
+        </div>
+        <div class="col-3"></div>
       </div>
     </div>
     <div class="container">
@@ -211,7 +289,8 @@
     role="tabpanel"
     aria-labelledby="ex3-tab-1"
   >
-  <div class="container">
+  <button type="button" class="btn btn-primary" id="randomButton">Button</button>
+  <div class="container" id="randomButton">
     <div class="row">
       <div class="col-sm-0 col-lg-0 first-column">
       </div>
@@ -354,7 +433,7 @@
   <div class="carousel-indicators">
     <button
       type="button"
-      data-mdb-target="#carouselBasicExample"
+      data-mdb-target="#carouselBasicExample2"
       data-mdb-slide-to="0"
       class="active"
       aria-current="true"
@@ -362,13 +441,13 @@
     ></button>
     <button
       type="button"
-      data-mdb-target="#carouselBasicExample"
+      data-mdb-target="#carouselBasicExample2"
       data-mdb-slide-to="1"
       aria-label="Slide 2"
     ></button>
     <button
       type="button"
-      data-mdb-target="#carouselBasicExample"
+      data-mdb-target="#carouselBasicExample2"
       data-mdb-slide-to="2"
       aria-label="Slide 3"
     ></button>
@@ -406,11 +485,11 @@
   <!-- Inner -->
 
   <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample2" data-mdb-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample2" data-mdb-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -468,6 +547,8 @@
         </div>   
       </div>  
     </div>
-    
+        <!-- MDB core JavaScript --> 
+        <script type="text/javascript" src="../js/app.js"></script>
+
       </body>
     </html>
