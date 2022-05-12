@@ -11,3 +11,9 @@ td {
 .wygrana{
   color: greenyellow;
 }
+.hide{
+  display: none;
+}
+.visible{
+  display: block;
+}
