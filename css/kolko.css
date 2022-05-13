@@ -1,12 +1,21 @@
+body{
+  background-image: url(../img/tlo.jpg);
+}
+table{
+  margin: auto;
+  border: 3px solid;
+  padding: 10px;
+}
 td {
   border: 5px solid black;
   border-style: inset;
-  background-color: dimgray;
+  background-image: url(../img/tabelatlo.jpg);
   width: 250px;
   height: 250px;
-  font-size: xx-large;
+  font-size: xxx-large;
   text-align: center;
   color: white;
+  font-family: 'Times New Roman', Times, serif;
 }
 .wygrana{
   color: greenyellow;
@@ -19,7 +28,7 @@ td {
 }
 #resetButton{
   margin: auto;
-  width: 40%;
+  width: 30%;
   border: 3px solid;
   padding: 10px;
 }

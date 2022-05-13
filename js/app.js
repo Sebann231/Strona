@@ -22,7 +22,7 @@ if(win1 == "xxx"){
     for(x=1 ; x<4 ; x++){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KRZYŻYKI</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -30,7 +30,7 @@ if(win2 == "xxx"){
     for(x=4 ; x<7 ; x++){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KRZYŻYKI</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -38,7 +38,7 @@ if(win3 == "xxx"){
     for(x=7 ; x<10 ; x++){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KRZYŻYKI</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -46,7 +46,7 @@ if(win4 == "xxx"){
     for(x=1 ; x<8 ; x+= 3){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KRZYŻYKI</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -54,7 +54,7 @@ if(win5 == "xxx"){
     for(x=2 ; x<9 ; x+= 3){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KRZYŻYKI</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -62,7 +62,7 @@ if(win6 == "xxx"){
     for(x=3 ; x<10 ; x+= 3){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KRZYŻYKI</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -70,7 +70,7 @@ if(win7 == "xxx"){
     for(x=1 ; x<10 ; x+= 4){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KRZYŻYKI</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -78,7 +78,7 @@ if(win8 == "xxx"){
     for(x=3 ; x<8 ; x+= 2){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KRZYŻYKI</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -86,7 +86,7 @@ if(win1 == "ooo"){
     for(x=1 ; x<4 ; x++){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KÓŁKA</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -94,7 +94,7 @@ if(win2 == "ooo"){
     for(x=4 ; x<7 ; x++){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KÓŁKA</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -102,7 +102,7 @@ if(win3 == "ooo"){
     for(x=7 ; x<10 ; x++){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KÓŁKA</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -110,7 +110,7 @@ if(win4 == "ooo"){
     for(x=1 ; x<8 ; x+= 3){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KÓŁKA</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -118,7 +118,7 @@ if(win5 == "ooo"){
     for(x=2 ; x<9 ; x+= 3){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KÓŁKA</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -126,7 +126,7 @@ if(win6 == "ooo"){
     for(x=3 ; x<10 ; x+= 3){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KÓŁKA</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -134,7 +134,7 @@ if(win7 == "ooo"){
     for(x=1 ; x<10 ; x+= 4){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KÓŁKA</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
@@ -142,62 +142,14 @@ if(win8 == "ooo"){
     for(x=3 ; x<8 ; x+= 2){
         document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
     }
-    document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
+    document.getElementById("info").innerHTML = '<div style="font-size:70px;color:white;">WYGRAŁY KÓŁKA</div>' ;
     table.removeEventListener("click",clickField) ;
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
 }
 if(remis == 9){
     document.getElementById("resetButton").className = "visible buttonReset  btn btn-secondary";
     table.removeEventListener("click",clickField);
-    document.getElementById("info").innerHTML = '<h1>Remis!!!</h1>';
-}
-if(win1 == "xxx"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały krzyżyki!!!</h1>';
-}
-if(win2 == "xxx"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały krzyżyki!!!</h1>';
-}
-if(win3 == "xxx"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały krzyżyki!!!</h1>';
-}
-if(win4 == "xxx"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały krzyżyki!!!</h1>';
-}
-if(win5 == "xxx"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały krzyżyki!!!</h1>';
-}
-if(win6 == "xxx"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały krzyżyki!!!</h1>';
-}
-if(win7 == "xxx"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały krzyżyki!!!</h1>';
-}
-if(win8 == "xxx"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały krzyżyki!!!</h1>';
-}
-if(win1 == "ooo"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały kółka!!!</h1>';
-}
-if(win2 == "ooo"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały kółka!!!</h1>';
-}
-if(win3 == "ooo"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały kółka!!!</h1>';
-}
-if(win4 == "ooo"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały kółka!!!</h1>';
-}
-if(win5 == "ooo"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały kółka!!!</h1>';
-}
-if(win6 == "ooo"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały kółka!!!</h1>';
-}
-if(win7 == "ooo"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały kółka!!!</h1>';
-}
-if(win8 == "ooo"){
-    document.getElementById("info").innerHTML = '<h1>Wygrały kółka!!!</h1>';
+    document.getElementById("info").innerHTML = '<h1 style="color:white;">Remis!!!</h1>';
 }
 resetButton.addEventListener("click",resetTable)
 function resetTable(e){
