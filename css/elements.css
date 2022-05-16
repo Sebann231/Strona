@@ -1,0 +1,149 @@
+.checked{
+  position:relative;
+  background-color: green;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+.container {
+	display: flex;
+}
+
+/*weight of element*/
+.dr {
+	text-align: right;
+	font-size:1vmin;
+}
+
+/*symbol name*/
+.symbol{
+  font-size:2vmin;
+  text-align: center
+}
+
+/*num of element*/
+.num_of_ele{
+  position: absolute;
+  left:0.1vmin;
+  bottom: 0.1vmin;
+
+  font-size: 1vmin;
+  text-align: left;
+}
+
+.green {
+  position:relative;
+  background-color: grey;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.dark_green {
+  position:relative;
+  background-color: grey;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.lime_green {
+  position:relative;
+  background-color: grey;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.pink{
+  position:relative;
+  background-color: grey;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.blue {
+  position:relative;
+  background-color: grey;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.orange {
+  position:relative;
+  background-color: grey;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.dark_orange {
+  position:relative;
+  background-color: grey;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.red {
+  position:relative;
+  background-color:grey ;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.dark_red {
+  position:relative;
+  background-color: grey ;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.yellow {
+  position:relative;
+  background-color: grey;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.invis {
+  position:relative;
+  background-color: grey;
+  opacity: 0;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+p.gone{
+	visibility: hidden;
+}
