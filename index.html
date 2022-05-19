@@ -250,10 +250,6 @@
 	<div class="dark_red">  <div class="dr"><small>259</small></div>   <div class="symbol"><b>No</b></div> <div class="num_of_ele"><small>102</small></div> </div>
 	<div class="dark_red">  <div class="dr"><small>266</small></div>   <div class="symbol"><b>Lr</b></div> <div class="num_of_ele"><small>103</small></div> </div>
 </div>
-<div id="input" class="form-outline">
-	<input type="text" id="form12" class="form-control" />
-	<label class="form-label" for="form12">Wpisz pierwiastek</label>
-  </div>
   <!-- Button trigger modal -->
   <div class="d-flex justify-content-center m-3">
   <button type="button" class="btn btn-secondary " data-mdb-toggle="modal" data-mdb-target="#exampleModal">
@@ -279,7 +275,16 @@
 	  </div>
 	</div>
   </div>
+  <div id="input" class="easy d-flex justify-content-center">
+	<form autocomplete="off" action="/action_page.php">
+		<div class="autocomplete" style="width:300px;">
+		  <input id="myInput" type="text" name="myCountry" placeholder="">
+		</div>
+	  </form>
+  </div>
 <script src="../js/app.js"></script>
 <script src="../js/pierwiastki.js"></script>
+<script src="../js/autocomplete.js"></script>
+<script>autocomplete(document.getElementById("myInput"), data);</script>
 </body>
 </html>
