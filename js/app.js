@@ -42,7 +42,8 @@ hard.addEventListener('click',gameStart);
 function gameStart(e){
   console.log(e.target.id);
   randomElements();
-  
+  document.getElementById("startButton").className = "hide"
+  document.getElementById("inputAuto").className = "show"
 }
 
 
