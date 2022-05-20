@@ -60,13 +60,6 @@ function autocomplete(inp, arr) {
         currentFocus--;
         /*and and make the current item more visible:*/
         addActive(x);
-      } else if (e.keyCode == 13) {
-        /*If the ENTER key is pressed, prevent the form from being submitted,*/
-        e.preventDefault();
-        if (currentFocus > -1) {
-          /*and simulate a click on the "active" item:*/
-          if (x) x[currentFocus].click();
-        }
       }
   });
   function addActive(x) {
@@ -100,4 +93,5 @@ document.addEventListener("click", function (e) {
     closeAllLists(e.target);
 });
 }
-autocomplete(document.getElementById("myInput"), data);
+autocomplete(document.getElementById("inputAuto"), data);
+

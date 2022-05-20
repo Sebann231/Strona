@@ -19,7 +19,7 @@
 	<!-- Bootstrap core JavaScript --> 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script> 
 </head>
-<body background="../img/chemia.jpg" style="background-color:black;">
+<body">
 
 <!--row 1-->
 <div class="container">
@@ -275,12 +275,10 @@
 	  </div>
 	</div>
   </div>
-  <div id="input" class="easy d-flex justify-content-center ">
-	<form id="inputAuto" autocomplete="off" action="/action_page.php" class="hide">
-		<div class="autocomplete" style="width:300px;">
-		  <input id="myInput" type="text" name="myCountry" placeholder="">
+  <div id="input" class="easy d-flex justify-content-center">
+		<div class="autocomplete">
+		  <input id="inputAuto" class="hide" type="text" onkeypress="checkQuestion(event)">
 		</div>
-	  </form>
   </div>
 <script src="../js/app.js"></script>
 <script src="../js/pierwiastki.js"></script>

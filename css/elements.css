@@ -157,11 +157,13 @@ p.gone{
 * { box-sizing: border-box; }
 body {
   font: 16px Arial;
+  background-image: url("../img/chemia.jpg");
 }
 .autocomplete {
   /*the container must be positioned relative:*/
   position: relative;
   display: inline-block;
+  width: 300px;
 }
 input {
   border: 1px solid transparent;
@@ -209,4 +211,22 @@ textarea:focus, input:focus{ outline: none; }
 }
 .show{
   display: block;
+}
+.goodAnswer{
+  position:relative;
+  background-color: greenyellow;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+.badAnswer{
+  position:relative;
+  background-color: red;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
 }
