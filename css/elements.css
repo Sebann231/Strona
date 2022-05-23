@@ -33,97 +33,7 @@
   text-align: left;
 }
 
-.green {
-  position:relative;
-  background-color: rgb(192, 187, 187);
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.dark_green {
-  position:relative;
-  background-color: rgb(192, 187, 187);
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.lime_green {
-  position:relative;
-  background-color: rgb(192, 187, 187);
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.pink{
-  position:relative;
-  background-color: rgb(192, 187, 187);
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.blue {
-  position:relative;
-  background-color: rgb(192, 187, 187);
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.orange {
-  position:relative;
-  background-color: rgb(192, 187, 187);
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.dark_orange {
-  position:relative;
-  background-color: rgb(192, 187, 187);
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.red {
-  position:relative;
-  background-color:rgb(192, 187, 187) ;
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.dark_red {
-  position:relative;
-  background-color: rgb(192, 187, 187) ;
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.yellow {
+.okresowy {
   position:relative;
   background-color: rgb(192, 187, 187);
   width: 5vw;
@@ -206,8 +116,9 @@ input[type=submit] {
   background-color: #f1f1f1 !important;
 }
 textarea:focus, input:focus{ outline: none; }
+
 .hide{
-  display: none;
+  display: none !important;
 }
 .show{
   display: block;
@@ -229,4 +140,19 @@ textarea:focus, input:focus{ outline: none; }
   padding: 2px;
   margin: 2px;
   float: left;
+}
+#end{
+  background-image: url(../img/end.jpg);
+  color: white;
+  text-align: center;
+  width: 33%;
+  height: 200px;
+  margin: auto;
+  padding: 75px;
+  border-radius: 15px;
+}
+#statistics{
+  text-align: center;
+  background-image: url(../img/water.jpg);
+  color: white;
 }
