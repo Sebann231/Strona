@@ -4,6 +4,8 @@ var answer = "";
 var y = 0 ;
 var k=0 ;
 var point = 0;
+var timer = 0;
+var countDownDate = new Date().getTime()+1000*120;
 container = document.getElementsByClassName("symbol");
 for(x = 0; x < container.length; x++){
   if(container[x].textContent != "DE"
@@ -30,6 +32,7 @@ elementChosed.push(randomNumber);
   document.getElementById("statictic").className = "show btn btn-warning"
   document.getElementById("inputAuto").className = "hide"
   document.getElementById("end").className = "show"
+  clearInterval(timer)
 }
 }
 
@@ -42,10 +45,16 @@ medium.addEventListener('click',gameStart);
 hard.addEventListener('click',gameStart);
 
 function gameStart(e){
+
+  countDownDate = new Date().getTime()+1000*120;
+  timer = setInterval(countDown,1000);
   randomElements();
   document.getElementById("startButton").className = "hide"
   document.getElementById("inputAuto").className = "show"
   document.getElementById("resetButton").className = "show btn btn-info"
+  document.getElementById("points").className = "col-6 left padding0 show"
+  document.getElementById("timer1").className = "col-6 left padding0 show"
+  statistics.innerHTML = "<h1>Liczba Punktów: "+point+"</h1>"
 }
 
 function checkQuestion(event){
@@ -56,6 +65,14 @@ function checkQuestion(event){
       randomElement.classList.add("goodAnswer");
       randomElement.classList.add("okres");
       point++;
+      countDownDate += 10*1000;
+      if(point == 2){
+        document.getElementById("walterWhite").innerHTML = '<img src="../img/walter.png" alt="">';
+        animation();
+      } 
+      else {
+        document.getElementById("walterWhite").innerHTML = "";
+      }
     }
     else {
       randomElement.classList.remove("checked");
@@ -81,9 +98,42 @@ function resetGame(e){
   document.getElementById("startButton").className = "btn btn-secondary show";
   document.getElementById("inputAuto").className = "hide";
   document.getElementById("resetButton").className = "hide";
-  document.getElementById("statictic").className = "hide";
-  document.getElementById("end").className = "hide";
-  document.getElementById("end").className = "hide";
+  document.getElementById("points").className = "col-6 left padding0 hide";
+  document.getElementById("timer1").className = "col-6 left padding0 hide";
   point = 0;
-  statistics.innerHTML = "<h1>Liczba Punktów: "+point+"</h1>";
+  clearInterval(timer);
+  countDownDate = new Date().getTime()+1000*120;
+  timer = setInterval(countDown,1000);
+  statistics.innerHTML = "";
+}
+
+function countDown(){
+// Set the date we're counting down to
+
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for minutes and seconds
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = minutes + ":" + seconds + "";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(timer);
+    document.getElementById("demo").innerHTML = "KONIEC";
+    resetGame();
+  }
+}
+
+// Update the count down every 1 second
+
+function animation(){
+  walterWhite.classList.add('animate__animated', 'animate__fadeInUpBig');
 }

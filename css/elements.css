@@ -6,9 +6,11 @@
   padding: 2px;
   margin: 2px;
   float: left;
+  border-radius: 7px;
 }
-.container {
+.container1 {
 	display: flex;
+  margin-left: 3%;
 }
 
 /*weight of element*/
@@ -28,7 +30,6 @@
   position: absolute;
   left:0.1vmin;
   bottom: 0.1vmin;
-
   font-size: 1vmin;
   text-align: left;
 }
@@ -41,6 +42,8 @@
   padding: 2px;
   margin: 2px;
   float: left;
+  border-radius: 7px;
+  color: black;
 }
 
 .invis {
@@ -131,6 +134,7 @@ textarea:focus, input:focus{ outline: none; }
   padding: 2px;
   margin: 2px;
   float: left;
+  border-radius: 7px;
 }
 .badAnswer{
   position:relative;
@@ -140,19 +144,58 @@ textarea:focus, input:focus{ outline: none; }
   padding: 2px;
   margin: 2px;
   float: left;
-}
-#end{
-  background-image: url(../img/end.jpg);
-  color: white;
-  text-align: center;
-  width: 33%;
-  height: 200px;
-  margin: auto;
-  padding: 75px;
-  border-radius: 15px;
+  border-radius: 7px;
 }
 #statistics{
   text-align: center;
-  background-image: url(../img/water.jpg);
-  color: white;
+  margin-top: 2%;
+  margin-left: 10%;
+  background-color: plum;
+  border-radius: 15px;
+  width: 80%;
+  height: 80%;
+  color: black;
+  padding: 32px;
+}
+.purple{
+  position:relative;
+  background-color: plum;
+  width: 5vw;
+  height: 5vh;
+  margin: 2px;
+  float: left;
+  border-radius: 7px;
+  color: black;
+}
+.countDown{
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 20%;
+  background-color: plum;
+  border-radius: 15px;
+  width: 80%;
+  height: 80%;
+  color: black;
+  padding: 10px;
+}
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+.padding0{
+  padding: 0px !important;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+#walterWhite{
+  position: fixed;
+  bottom: 0;
+  width: 20%;
+  height: 30%;
+  border-top-right-radius: 15px;
 }

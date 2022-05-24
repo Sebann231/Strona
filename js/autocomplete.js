@@ -94,4 +94,3 @@ document.addEventListener("click", function (e) {
 });
 }
 autocomplete(document.getElementById("inputAuto"), data);
-
