@@ -5,6 +5,7 @@ var y = 0 ;
 var k=0 ;
 var point = 0;
 var timer = 0;
+
 var countDownDate = new Date().getTime()+1000*120;
 container = document.getElementsByClassName("symbol");
 for(x = 0; x < container.length; x++){
@@ -100,6 +101,7 @@ function resetGame(e){
   document.getElementById("resetButton").className = "hide";
   document.getElementById("points").className = "col-6 left padding0 hide";
   document.getElementById("timer1").className = "col-6 left padding0 hide";
+  document.getElementById("statictic").className = "hide btn btn-warning"
   point = 0;
   clearInterval(timer);
   countDownDate = new Date().getTime()+1000*120;
@@ -128,7 +130,8 @@ function countDown(){
   if (distance < 0) {
     clearInterval(timer);
     document.getElementById("demo").innerHTML = "KONIEC";
-    resetGame();
+    document.getElementById("statictic").className = "show btn btn-warning"
+    document.getElementById("inputAuto").className = "hide"
   }
 }
 

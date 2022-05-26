@@ -1,0 +1,104 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 59% 20%;
+    grid-template-rows: 500px;
+    gap: 10px;
+    background-color: #818181;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+    border-radius: 15px;
+  }
+  .grid-stopka {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70px;
+    gap: 10px;
+    background-color: #818181;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+    .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
+    .grid-item-long {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+    
+    }
+    img{
+    width:100px ;
+    height:100px ;
+    border-radius: 15px;
+    }
+    .prev, .next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .prev:hover, .next:hover {
+    background-color: #818181;
+    border-radius: 15px;
+    }
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    margin-top: 40px;
+  }
+  .text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 460px;
+    width: 100%;
+    text-align: center;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .images{
+    width:100%;
+    height: 460px;
+  }
