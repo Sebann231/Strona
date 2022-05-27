@@ -1,5 +1,4 @@
 .checked{
-  position:relative;
   background-color: rgb(218, 218, 2);
   width: 5vw;
   height: 5vh;
@@ -35,7 +34,6 @@
 }
 
 .okresowy {
-  position:relative;
   background-color: rgb(192, 187, 187);
   width: 5vw;
   height: 5vh;
@@ -127,7 +125,6 @@ textarea:focus, input:focus{ outline: none; }
   display: block;
 }
 .goodAnswer{
-  position:relative;
   background-color: greenyellow;
   width: 5vw;
   height: 5vh;
@@ -137,7 +134,6 @@ textarea:focus, input:focus{ outline: none; }
   border-radius: 7px;
 }
 .badAnswer{
-  position:relative;
   background-color: red;
   width: 5vw;
   height: 5vh;
@@ -158,7 +154,6 @@ textarea:focus, input:focus{ outline: none; }
   padding: 32px;
 }
 .purple{
-  position:relative;
   background-color: plum;
   width: 5vw;
   height: 5vh;
@@ -193,9 +188,115 @@ p {
   text-align: right;
 }
 #walterWhite{
-  position: fixed;
-  bottom: 0;
-  width: 20%;
-  height: 30%;
+  position: fixed !important;
+  bottom: 0 !important;
+  width: 20% !important;
+  height: 30% !important;
+  border-top-right-radius: 15px !important;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns:20% 10% 38% 10% 20%;
+  grid-template-rows: 500px;
+  gap: 10px;
+  padding: 10px;
+  border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+.left, .midle, .right{
+  text-align: center;
+  font-size: 30px;
+  border-radius: 15px;
+} 
+.grid-stopka {
+  display: grid;
+  margin: auto;
+  grid-template-columns:30% 38.9% 30%;
+  grid-template-rows: 70px;
+  gap: 10px;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+  .grid-item {
+  background-color: rgba(255, 255, 255,);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  }
+  .grid-item-long {
+  background-color: rgba(255, 255, 255,);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 15px;
+  
+  }
+  .imgleft, .imgright{
+  width:100px ;
+  height:100px ;
+  border-radius: 15px;
+  }
+  .prev, .next {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  }
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin-top: 40px;
+}
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 460px;
+  width: 100%;
+  text-align: center;
+}
+.images{
+  width:100%;
+  height: 460px;
+  border-radius: 15px;
+}
+#rewards{
+  position: absolute;
+  width: 100%;
+}
+.image{
+  height: 600px;
+  border-radius: 15px;
 }

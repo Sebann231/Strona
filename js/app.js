@@ -5,9 +5,12 @@ var y = 0 ;
 var k=0 ;
 var point = 0;
 var timer = 0;
+var rewardsTable = [];
+var rewardsChosed = [];
 
 var countDownDate = new Date().getTime()+1000*120;
 container = document.getElementsByClassName("symbol");
+
 for(x = 0; x < container.length; x++){
   if(container[x].textContent != "DE"
   && container[x].textContent != "DEL"
@@ -17,6 +20,7 @@ for(x = 0; x < container.length; x++){
       y++ ;
   }
 }
+
 
 function randomElements(){
 if(elementChosed.length < elements.length){
@@ -74,7 +78,13 @@ function checkQuestion(event){
       else {
         document.getElementById("walterWhite").innerHTML = "";
       }
-    }
+      if(point == 5){
+        document.getElementById("rewards").className = "show";
+      }
+      else {
+      document.getElementById("rewards").className = "hide";
+      }
+  }
     else {
       randomElement.classList.remove("checked");
       randomElement.classList.add("badAnswer");
@@ -102,6 +112,7 @@ function resetGame(e){
   document.getElementById("points").className = "col-6 left padding0 hide";
   document.getElementById("timer1").className = "col-6 left padding0 hide";
   document.getElementById("statictic").className = "hide btn btn-warning"
+  document.getElementById("walterWhite").innerHTML = "";
   point = 0;
   clearInterval(timer);
   countDownDate = new Date().getTime()+1000*120;
@@ -133,6 +144,29 @@ function countDown(){
     document.getElementById("statictic").className = "show btn btn-warning"
     document.getElementById("inputAuto").className = "hide"
   }
+
+  if(point == 2){
+    okresowy = document.getElementsByClassName("okresowy") ;
+    okresowy.add("type") = "button" ;
+    document.getElementsByClassName("okresowy").classList = "checked" ;
+  //wybieranie pierwiastka
+}
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+  if(point == 5){
+    MathRandom()*2
+  }
+}
+ 
+  function addTime(min, max) {
+    min = countDownDate += 1*1000;
+    max = countDownDate += 80*1000;
+  }
+ 
+ 
 }
 
 // Update the count down every 1 second

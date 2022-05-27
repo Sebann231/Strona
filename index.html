@@ -21,6 +21,26 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+	<div id="rewards" class="hide">
+		<div class="grid-container">
+			<div></div>
+			<div class="grid-item" style="position: relative;"><a class="prev" onclick="plusSlides(-1)"><img class="imgleft" src="../img/left.png" alt=""></a></div>
+			<div class="grid-item midle">
+			<div class="slideshow-container">
+			</div>
+		</div>
+		<div class="grid-item right" style="position: relative;">
+			<a class="next" onclick="plusSlides(1)"><img class="imgright" src="../img/right.png" alt="prawo"></a>
+		</div>
+		<div></div>
+	</div>
+		<div class="grid-stopka">
+			<div></div>
+			<div class="grid-item-long">
+			</div>
+			<div></div>
+		</div>
+	</div>
 	<div class="container">
 	<div class="row">
 		<div id="points" class="col-6 left padding0 hide">
@@ -317,6 +337,7 @@
 	  </button>
 	</div>
 	<div id="walterWhite"></div>
+<script src="../js/grid.js"></script>
 <script src="../js/app.js"></script>
 <script src="../js/pierwiastki.js"></script>
 <script src="../js/autocomplete.js"></script>

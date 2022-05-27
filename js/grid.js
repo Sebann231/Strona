@@ -2,8 +2,8 @@ var imagesSliderPath = [] ;
 imagesSliderPath[0] = 'tlo' ;
 imagesSliderPath[1] = 'trawa' ;
 imagesSliderPath[2] = 'chemia' ;
-imagesSliderPath[3] = 'chemia' ;
-imagesSliderPath[4] = 'chemia' ;
+imagesSliderPath[3] = 'tlo' ;
+imagesSliderPath[4] = 'trawa' ;
 imagesSliderPath[5] = 'chemia' ;
 imageElements = [] ;
 imageDiv = [] ;
@@ -12,7 +12,7 @@ y = 0 ;
 
 for(x=0 ; x < imagesSliderPath.length ; x++) {
     imageDiv[x] = document.createElement("div")
-    imageDiv[x].classList.add("mySlides","fade");
+    imageDiv[x].classList.add("mySlides",);
     imageElements[x] = document.createElement("img");
     imageElements[x].classList.add("images");
     imageElements[x].setAttribute("src","./img/"+imagesSliderPath[x]+".jpg");
