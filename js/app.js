@@ -24,7 +24,7 @@ for(x = 0; x < container.length; x++){
 
 function randomElements(){
 if(elementChosed.length < elements.length){
-randomNumber = Math.floor(Math.random() * elements.length) ;
+randomNumber = Math.floor(Math.random() * elements.length) 
 answer = elements[randomNumber][1];
 randomElement = elementsTable[randomNumber].parentNode ;
 if (elementChosed.includes(randomNumber)){
@@ -157,7 +157,7 @@ function getRandomIntInclusive(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
   if(point == 5){
-    MathRandom()*2
+    MathRandom()*30
   }
 }
  
