@@ -237,7 +237,6 @@ body {
 .search{
     background-color: black;
     color: white;
-    position: fixed;
     z-index: 500;
 }
 .produkty{
@@ -279,9 +278,9 @@ body {
     background: #ccc;
   }
   .znizki{
-      height: 366px;
+      background-image: url(../img/hov1.jpg);
       width: 100%;
-      background-image: url(../img/pralka.jpg);
+      height: 366px;
   }
   .white{
       background-color: white !important;
@@ -306,5 +305,70 @@ body {
   .cos{
       float: left;
   }
-
-
+  p:hover {
+    color: black;
+    font-weight: 700;
+  }
+.hov2:hover{
+    height: 366px;
+    width: 100%;
+    background-image: url(../img/hov2.jpg);
+    position: absolute;
+    bottom: 110px;
+}
+.hov3:hover{
+    height: 366px;
+    width: 100%;
+    background-image: url(../img/hov3.jpg);
+    position: absolute;
+    bottom: 110px;
+}
+.hov4:hover{
+    height: 366px;
+    width: 100%;
+    background-image: url(../img/hov4.jpg);
+    position: absolute;
+    bottom: 110px;
+}
+.hov5:hover{
+    height: 366px;
+    width: 100%;
+    background-image: url(../img/hov5.jpg);
+    position: absolute;
+    bottom: 110px;
+}
+.hov6:hover{
+    height: 366px;
+    width: 100%;
+    background-image: url(../img/hov6.jpg);
+    position: absolute;
+    bottom: 110px;
+}
+.hov7:hover{
+    height: 366px;
+    width: 100%;
+    background-image: url(../img/hov7.jpg);
+    position: absolute;
+    bottom: 110px;
+}
+.hov8:hover{
+    height: 366px;
+    width: 100%;
+    background-image: url(../img/hov8.jpg);
+    position: absolute;
+    bottom: 110px;
+}
+  @media(max-width: 800px){
+    .layout-horizontal{
+        flex: 2;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        margin: auto;
+        text-align: center;
+        
+    }
+    .carousel, .contact, .znizki, .nwm{
+        display: none;
+    }
+  }
